@@ -1,0 +1,8 @@
+2024-05-23 11:06:56,284 Getting artifact
+Traceback (most recent call last):
+  File "C:\Users\UKASHI\Documents\Github\cd0581-building-a-reproducible-model-workflow-exercises\lesson-1-machine-learning-pipelines\exercises\exercise_1\starter\use_artifact.py", line 42, in <module>
+    go(args)
+  File "C:\Users\UKASHI\Documents\Github\cd0581-building-a-reproducible-model-workflow-exercises\lesson-1-machine-learning-pipelines\exercises\exercise_1\starter\use_artifact.py", line 22, in go
+    artifact_path = artifact.file()
+                    ^^^^^^^^
+NameError: name 'artifact' is not defined
