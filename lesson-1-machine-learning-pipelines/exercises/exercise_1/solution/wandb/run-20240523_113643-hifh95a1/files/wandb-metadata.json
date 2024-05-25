@@ -1,0 +1,54 @@
+{
+    "os": "Windows-11-10.0.22621-SP0",
+    "python": "3.12.3",
+    "heartbeatAt": "2024-05-23T10:36:45.740760",
+    "startedAt": "2024-05-23T10:36:43.903286",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--input_file",
+        "zen.txt",
+        "--artifact_name",
+        "zen_of_python",
+        "--artifact_type",
+        "text_file",
+        "--artifact_description",
+        "20 aphorisms about writing good python code"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\UKASHI\\Documents\\Github\\cd0581-building-a-reproducible-model-workflow-exercises\\lesson-1-machine-learning-pipelines\\exercises\\exercise_1\\solution\\upload_artifact.py",
+    "codePathLocal": "upload_artifact.py",
+    "codePath": "lesson-1-machine-learning-pipelines\\exercises\\exercise_1\\solution\\upload_artifact.py",
+    "git": {
+        "remote": "https://github.com/DrUkachi/cd0581-building-a-reproducible-model-workflow-exercises.git",
+        "commit": "164e3a579cb1100ca5f307ad375866d865e6ecf8"
+    },
+    "email": "58250862+DrUkachi@users.noreply.github.com",
+    "root": "C:/Users/UKASHI/Documents/Github/cd0581-building-a-reproducible-model-workflow-exercises",
+    "host": "UKACHI",
+    "username": "UKASHI",
+    "executable": "C:\\Users\\UKASHI\\anaconda3\\envs\\mlopsudacity\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2208.0,
+        "min": 0.0,
+        "max": 2208.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2208.0,
+            "min": 0.0,
+            "max": 2208.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1861.7070274353027,
+            "used": 1804.5574417114258
+        }
+    },
+    "memory": {
+        "total": 15.879234313964844
+    }
+}

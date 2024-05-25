@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/UKASHI/Documents/Github/cd0581-building-a-reproducible-model-workflow-exercises/lesson-1-machine-learning-pipelines/exercises/exercise_2/solution/mlruns/0/7f1bfad7b5eb459e9162db6e4a5a717b/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7f1bfad7b5eb459e9162db6e4a5a717b
+run_name: whimsical-trout-847
+run_uuid: 7f1bfad7b5eb459e9162db6e4a5a717b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716618970151
+status: 1
+tags: []
+user_id: UKASHI

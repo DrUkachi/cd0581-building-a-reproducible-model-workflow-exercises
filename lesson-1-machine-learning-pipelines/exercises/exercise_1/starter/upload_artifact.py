@@ -40,6 +40,9 @@ def go(args):
     # YOUR CODE HERE
     artifact.add_file(args.input_file)
 
+    logger.info("Logging artifact")
+    run.log_artifact(artifact)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
