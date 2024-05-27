@@ -67,7 +67,10 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        "--artifact_type", type=str, help="Type for the artifact", required=True
+        "--artifact_type", 
+        type=str, 
+        help="Type for the artifact", 
+        required=True
     )
 
     parser.add_argument(

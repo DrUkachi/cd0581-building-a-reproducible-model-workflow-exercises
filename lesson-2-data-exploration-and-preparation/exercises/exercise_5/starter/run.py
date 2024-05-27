@@ -1,6 +1,8 @@
 #!/usr/bin/env python
+import os
 import argparse
 import logging
+
 import pandas as pd
 import wandb
 
@@ -13,8 +15,39 @@ def go(args):
 
     run = wandb.init(project="exercise_5", job_type="process_data")
 
-    ## YOUR CODE HERE
-    pass
+    logger.info("Downloadin the raw data artifact")
+    artifact = run.use_artifact(args.input_artifact)
+    artifact_path = artifact.file()
+
+    df = pd.read_parquet(artifact_path)
+
+    # Dropping the duplicates
+    logger.info("Dropping the duplicate values")
+    df = df.drop_duplicates().reset_index(drop=True)
+
+    logger.info("Dealing with Missing values")
+    # These are missing values that are due to an old version of the data. On new data,
+    # because of a change in the web form used to register new songs, the title and the
+    # song name are already empty strings
+    df['title'].fillna(value='', inplace=True)
+    df['song_name'].fillna(value='', inplace=True)
+    df['text_feature'] = df['title'] + ' ' + df['song_name']
+
+    filename = "preprocessed_data.csv"
+    df.to_csv(filename)
+
+    artifact = wandb.Artifact(
+        name=args.artifact_name,
+        type=args.artifact_type,
+        description=args.artifact_description
+    )
+
+    artifact.add_file(filename)
+
+    logger.info("Logging artifact")
+    run.log_artifact(artifact)
+
+    os.remove(filename)
 
 
 if __name__ == "__main__":
@@ -31,11 +64,17 @@ if __name__ == "__main__":
     )
 
     parser.add_argument(
-        "--artifact_name", type=str, help="Name for the artifact", required=True
+        "--artifact_name", 
+        type=str, 
+        help="Name for the artifact", 
+        required=True
     )
 
     parser.add_argument(
-        "--artifact_type", type=str, help="Type for the artifact", required=True
+        "--artifact_type", 
+        type=str, 
+        help="Type for the artifact", 
+        required=True
     )
 
     parser.add_argument(
