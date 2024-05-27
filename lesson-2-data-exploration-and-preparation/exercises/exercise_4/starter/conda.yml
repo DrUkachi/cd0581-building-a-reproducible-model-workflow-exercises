@@ -4,6 +4,7 @@ channels:
   - defaults
 dependencies:
   - jupyterlab
+  - jupyter
   - seaborn
   - pandas
   - pip
