@@ -1,0 +1,48 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.9.13",
+    "heartbeatAt": "2024-05-28T12:03:44.036738",
+    "startedAt": "2024-05-28T12:03:42.165594",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        ".",
+        "-vv"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\UKASHI\\anaconda3\\Scripts\\pytest-script.py",
+    "codePathLocal": "..\\..\\..\\..\\..\\..\\anaconda3\\Scripts\\pytest-script.py",
+    "codePath": "..\\..\\..\\anaconda3\\Scripts\\pytest-script.py",
+    "git": {
+        "remote": "https://github.com/DrUkachi/cd0581-building-a-reproducible-model-workflow-exercises.git",
+        "commit": "9358e7eb7f311c2fcfe7a7103d437bda9bda1c60"
+    },
+    "email": "58250862+DrUkachi@users.noreply.github.com",
+    "root": "C:/Users/UKASHI/Documents/Github/cd0581-building-a-reproducible-model-workflow-exercises",
+    "host": "UKACHI",
+    "username": "UKASHI",
+    "executable": "C:\\Users\\UKASHI\\anaconda3\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2208.0,
+        "min": 0.0,
+        "max": 2208.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2208.0,
+            "min": 0.0,
+            "max": 2208.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1861.7070274353027,
+            "used": 1383.1522521972656
+        }
+    },
+    "memory": {
+        "total": 15.879234313964844
+    }
+}
