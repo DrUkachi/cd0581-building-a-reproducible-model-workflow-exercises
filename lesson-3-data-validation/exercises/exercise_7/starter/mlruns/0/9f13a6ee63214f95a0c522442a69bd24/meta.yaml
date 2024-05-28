@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/UKASHI/Documents/Github/cd0581-building-a-reproducible-model-workflow-exercises/lesson-3-data-validation/exercises/exercise_7/starter/mlruns/0/9f13a6ee63214f95a0c522442a69bd24/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9f13a6ee63214f95a0c522442a69bd24
+run_name: bald-crane-177
+run_uuid: 9f13a6ee63214f95a0c522442a69bd24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716898891011
+status: 1
+tags: []
+user_id: UKASHI

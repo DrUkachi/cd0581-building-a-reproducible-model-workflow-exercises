@@ -1,10 +1,10 @@
-name: download_data
+name: exercise_7
 channels:
   - conda-forge
   - defaults
 dependencies:
-  - pandas=1.2.3
-  - pip=20.3.3
-  - pytest=6.2.2
+  - pandas
+  - pip
+  - pytest
   - pip:
-      - wandb==0.10.21
+      - wandb
