@@ -12,7 +12,7 @@ def pytest_addoption(parser):
 
     # COMPLETE HERE: add the option for ks_alpha
     parser.addoption(
-        "--ks-alpha",  # Use double hyphens for command-line options
+        "--ks_alpha",  # Use double hyphens for command-line options
         action="store")
 
 
@@ -46,7 +46,7 @@ def ks_alpha(request):
     # COMPLETE HERE: read the option ks_alpha from the command line,
     # and return it as a float
 
-    ks_alpha = request.config.options.ks_alpha
+    ks_alpha = request.config.option.ks_alpha
 
     if ks_alpha is None:
         pytest.fail("--ks_threshold missing in command line")
