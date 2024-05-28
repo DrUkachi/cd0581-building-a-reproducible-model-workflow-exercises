@@ -14,7 +14,7 @@ def pytest_addoption(parser):
     parser.addoption(
         "--ks-alpha",  # Use double hyphens for command-line options
         action="store",
-        default=0.05,  # Optional: set a default value
+        default="0.05",  # Optional: set a default value
         type=float,  # Specify the type of the argument
         help="Significance level for KS test"  # Help description for the option
     )
