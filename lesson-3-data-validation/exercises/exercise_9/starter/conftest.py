@@ -11,7 +11,15 @@ def pytest_addoption(parser):
     parser.addoption("--sample_artifact", action="store")
 
     # COMPLETE HERE: add the option for ks_alpha
-    parser.addoption("ks_alpha", action="store")
+    parser.addoption(
+        "--ks-alpha",  # Use double hyphens for command-line options
+        action="store",
+        default=0.05,  # Optional: set a default value
+        type=float,  # Specify the type of the argument
+        help="Significance level for KS test"  # Help description for the option
+    )
+
+
 
 
 @pytest.fixture(scope="session")
@@ -48,3 +56,6 @@ def ks_alpha(request):
         pytest.fail("--ks_threshold missing in command line")
 
     return float(ks_alpha)
+
+
+
